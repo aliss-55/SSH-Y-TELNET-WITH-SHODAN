@@ -21,6 +21,8 @@ Instala las librerías necesarias con:
 ```bash
 pip install shodan paramiko
 
+---
+
 ## 🧪 Ejecución Paso a Paso
 
 ### 🔧 Paso 1: Preparar el entorno
