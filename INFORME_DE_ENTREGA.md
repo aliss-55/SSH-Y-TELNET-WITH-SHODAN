@@ -38,3 +38,39 @@ Esta herramienta se ha desarrollado exclusivamente con fines **educativos y éti
 
 Se utilizó ChatGPT como asistente para guiar el desarrollo del proyecto. Los prompts más relevantes fueron:
 
+"Explícame paso a paso cómo desarrollar una aplicación en Python para validar SSH y Telnet con Shodan."
+
+"Hazme un script que genere un resumen final."
+
+"Ayúdame a mejorar el README.md para entregarlo en GitHub."
+
+"Explícame cómo cumplir con esta rúbrica punto por punto."
+
+---
+
+## 📈 Alcance y Limitaciones Técnicas
+
+- Se implementó validación de puertos 22 y 23 (SSH y Telnet).
+- Las IPs se obtienen dinámicamente desde la API de Shodan.
+- Se requiere una conexión estable a internet y una API Key activa con créditos suficientes.
+- Puede haber demoras o bloqueos si los servidores tienen firewalls, timeout o credenciales no válidas.
+
+---
+
+## 📌 Entregables Incluidos
+
+- Código fuente (`main.py`, módulos, credenciales)
+- Documentación (`README.md`)
+- Logs generados automáticamente
+- Este informe (`INFORME_DE_ENTREGA.md`)
+
+---
+
+## ✨ Recomendaciones Finales
+
+Se recomienda probar en entornos controlados y manejar con responsabilidad los resultados obtenidos. Esta herramienta puede extenderse para incluir otros servicios inseguros o funcionalidades como escaneo de banners o gráficos de acceso.
+
+
+
+
+
