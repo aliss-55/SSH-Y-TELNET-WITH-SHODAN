@@ -32,7 +32,6 @@ Este proyecto permite realizar una auditoría automatizada de dispositivos en La
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/aliss-55/SSH-Y-TELNET-WITH-SHODAN.git
-   cd proyecto-auditoria
    ```
 
 2. Instala las dependencias:
