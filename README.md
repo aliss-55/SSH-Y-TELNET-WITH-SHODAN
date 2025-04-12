@@ -16,10 +16,12 @@ Este proyecto permite realizar una auditoría automatizada de dispositivos en La
 
 ### 📦 Dependencias
 
-Instala las librerías necesarias con:
-
-```bash
-pip install shodan paramiko
+- Python 3.8+
+- Librerías externas:
+  ```bash
+  pip install shodan paramiko
+  ```
+- Librerías estándar: `os`, `telnetlib`
 
 ---
 
