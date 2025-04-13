@@ -1,5 +1,6 @@
 import paramiko
 from paramiko.ssh_exception import SSHException
+import socket
 
 def validate_ssh(ip, user, password):
     client = paramiko.SSHClient()
@@ -9,9 +10,11 @@ def validate_ssh(ip, user, password):
         client.close()
         return True
     except SSHException as e:
-        print(f"    ⚠️ SSHException en {ip}: {e}")
+        print(f"    ⚠️ SSH error en {ip}: {str(e).split(':')[0]}")
         return False
-    except Exception as e:
-        print(f"    ⚠️ Error general en {ip}: {e}")
+    except socket.error as e:
+        print(f"    ⚠️ Socket error en {ip}: {e}")
         return False
-
+    except Exception:
+        print(f"    ⚠️ Fallo desconocido en {ip}")
+        return False
