@@ -16,7 +16,68 @@ Este proyecto permite realizar una auditoría automatizada de dispositivos en La
 
 ### 📦 Dependencias
 
-Instala las librerías necesarias con:
+- Python 3.8+
+- Librerías externas:
+  ```bash
+  pip install shodan paramiko
+  ```
+- Librerías estándar: `os`, `telnetlib`
+
+---
+
+## 🧪 Ejecución Paso a Paso
+
+### 🔧 Paso 1: Preparar el entorno
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/aliss-55/SSH-Y-TELNET-WITH-SHODAN.git
+   ```
+
+2. Instala las dependencias:
+   ```bash
+   pip install shodan paramiko
+   ```
+
+---
+
+### 🗝️ Paso 2: Obtener tu API Key de Shodan
+
+1. Ve a [shodan.io](https://www.shodan.io/)
+2. Crea una cuenta gratuita o inicia sesión.
+3. Copia tu API Key desde el perfil.
+4. Pégala cuando el script la solicite.
+
+---
+
+### 📁 Paso 3: Configurar credenciales
+
+Edita los archivos dentro de `credentials/`:
+
+**users.txt**
+```
+admin
+root
+user
+```
+
+**passwords.txt**
+```
+1234
+admin
+toor
+```
+
+---
+
+### ▶️ Paso 4: Ejecutar el script
 
 ```bash
-pip install shodan paramiko
+python main.py
+```
+
+- Ingresa tu API Key.
+- Selecciona el país de Latinoamérica desde el menú.
+- El sistema buscará IPs expuestas y validará automáticamente por **SSH y Telnet**.
+
+---
